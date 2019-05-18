@@ -1,4 +1,9 @@
-<<<<<<< HEAD
+
+| Label | Image |
+| --- | --- |
+| Pipeline status | [![pipeline status](https://gitlab.com/senth542002/create-todo-list/badges/master/pipeline.svg)](https://gitlab.com/senth542002/create-todo-list/commits/master) |
+|Coverage report | [![coverage report](https://gitlab.com/senth542002/create-todo-list/badges/master/coverage.svg)](https://gitlab.com/senth542002/create-todo-list/commits/master) |
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
