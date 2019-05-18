@@ -62,6 +62,6 @@ deploy:
   script:
     - pip install awscli
     - unzip build.zip
-    - cd build
+    #- cd build
     - ls -la
     - aws s3 sync build/ s3://create-todo-list
