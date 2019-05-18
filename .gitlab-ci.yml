@@ -2,11 +2,10 @@ image: node:latest
 
 stages:
   - build
-  - push_to_amazon
   - test
   - format
   - lint
-
+  - push_to_amazon
 
 cache:
   paths:
@@ -46,7 +45,7 @@ testing_testing:
     - npm install npm@latest -g
     - npm install --save react react-dom react-scripts
     - npm install -g nyc
-    - npm test
+    - npm test a
     - npm run coverage
     - mv .nyc_output/ coverage/
   coverage: /All files\s*\|\s*([\d\.]+)/
@@ -56,8 +55,8 @@ testing_testing:
 
 deploy:
   stage: push_to_amazon
-  # only:
-  #     - release
+  only:
+      - release
   image: python:latest
   script:
     - pip install awscli
