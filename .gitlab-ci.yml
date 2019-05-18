@@ -16,6 +16,7 @@ install_dependencies:
   stage: build
   script:
     - npm install
+    - apt-get update
     - apt-get install zip unzip
     - npm run build
     - ls -la build
