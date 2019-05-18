@@ -55,10 +55,12 @@ deploy:
   stage: push_to_amazon
   # only:
   #     - release
-
+  image: python:latest
   script:
-    - brew install awscli
+    #- brew install awscli
     # - unzip build.zip
     # - cd build
     # - ls -la
-    - npm deploy
+    #- npm deploy
+    - pip install awscli
+    - aws s3 sync build/ s3://create-todo-list
