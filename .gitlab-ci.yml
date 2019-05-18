@@ -44,11 +44,9 @@ testing_testing:
   script:
     - npm install npm@latest -g
     - npm install --save react react-dom react-scripts
-    #- npm install -g nyc
-    - npm install --save codecov
-    - npm test a
-    #- npm run coverage a
-    - npm test --coverage && codecov
+    - npm install -g nyc
+    - npm test
+    - npm run coverage
     - mv .nyc_output/ coverage/
   coverage: /All files\s*\|\s*([\d\.]+)/
   artifacts:
