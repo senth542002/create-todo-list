@@ -17,7 +17,7 @@ install_dependencies:
   script:
     - npm install
     - apt-get update
-    - apt-get install zip unzip
+    - apt-get --yes --force-yes install zip unzip
     - npm run build
     - ls -la build
     - zip build.zip -r ./build
