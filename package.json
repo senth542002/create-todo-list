@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier-standard 'src/**/*.js'",
-    "coverage": "nyc react-scripts test --watchAll=false --coverage"
+    "coverage": "react-scripts test --watchAll=false --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
