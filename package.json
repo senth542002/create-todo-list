@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier-standard 'src/**/*.js'",
-    "coverage": "NODE_ENV=test nyc --reporter=text mocha --timeout 10000"
+    "coverage": "nyc react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
