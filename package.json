@@ -12,11 +12,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "aws s3 sync build/ s3://create-todo-list",
-    "test": "react-scripts test",
+    "test": "react-scripts test a",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier-standard 'src/**/*.js'",
-    "coverage": "nyc react-scripts test"
+    "coverage": "nyc react-scripts test --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"

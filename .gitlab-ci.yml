@@ -1,8 +1,8 @@
 image: node:latest
 
 stages:
-  - build
   - test
+  - build
   - format
   - lint
   - push_to_amazon
@@ -44,9 +44,11 @@ testing_testing:
   script:
     - npm install npm@latest -g
     - npm install --save react react-dom react-scripts
-    - npm install -g nyc
+    #- npm install -g nyc
+    - npm install --save codecov
     - npm test a
-    - npm run coverage a
+    #- npm run coverage a
+    - npm test --coverage && codecov
     - mv .nyc_output/ coverage/
   coverage: /All files\s*\|\s*([\d\.]+)/
   artifacts:
