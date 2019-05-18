@@ -64,4 +64,4 @@ deploy:
     - unzip build.zip
     - cd build
     - ls -la
-    - npm deploy
+    - aws s3 sync build/ s3://create-todo-list
