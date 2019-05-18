@@ -45,7 +45,7 @@ testing_testing:
     - npm install npm@latest -g
     - npm install --save react react-dom react-scripts
     - npm install -g nyc
-    - npm test
+    - npm test a
     - npm run coverage
     - mv .nyc_output/ coverage/
   coverage: /All files\s*\|\s*([\d\.]+)/
