@@ -2,10 +2,11 @@ image: node:latest
 
 stages:
   - build
+  - push_to_amazon
   - test
   - format
   - lint
-  - push_to_amazon
+
 
 cache:
   paths:
@@ -16,8 +17,8 @@ install_dependencies:
   script:
     - npm install
     - npm run build
-    # - ls -la build
-    # - zip build.zip -r ./build
+    - ls -la build
+    - zip build.zip -r ./build
   artifacts:
     paths:
       - build.zip
