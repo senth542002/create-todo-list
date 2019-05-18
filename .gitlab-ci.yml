@@ -46,7 +46,7 @@ testing_testing:
     - npm install --save react react-dom react-scripts
     - npm install -g nyc
     - npm test a
-    - npm run coverage
+    - npm run coverage a
     - mv .nyc_output/ coverage/
   coverage: /All files\s*\|\s*([\d\.]+)/
   artifacts:
