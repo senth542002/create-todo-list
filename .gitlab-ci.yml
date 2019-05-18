@@ -16,8 +16,8 @@ install_dependencies:
   script:
     - npm install
     - npm run build
-    - ls -la build
-    - zip build.zip -r ./build
+    # - ls -la build
+    # - zip build.zip -r ./build
   artifacts:
     paths:
       - build.zip
@@ -53,11 +53,11 @@ testing_testing:
 
 deploy:
   stage: push_to_amazon
-  only:
-      - release
+  # only:
+  #     - release
 
   script:
-    - unzip build.zip
-    - cd build
-    - ls -la
+    # - unzip build.zip
+    # - cd build
+    # - ls -la
     - npm deploy
