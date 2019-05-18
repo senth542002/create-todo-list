@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "codecov": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -12,11 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "aws s3 sync build/ s3://create-todo-list",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier-standard 'src/**/*.js'",
-    "coverage": "nyc react-scripts test"
+    "coverage": "react-scripts test --watchAll=false --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
