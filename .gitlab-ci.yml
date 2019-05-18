@@ -2,11 +2,10 @@ image: node:latest
 
 stages:
   - build
-  - push_to_amazon
   - test
   - format
   - lint
-
+  - push_to_amazon
 
 cache:
   paths:
@@ -56,8 +55,8 @@ testing_testing:
 
 deploy:
   stage: push_to_amazon
-  # only:
-  #     - release
+  only:
+      - release
   image: python:latest
   script:
     - pip install awscli
