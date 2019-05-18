@@ -41,6 +41,7 @@ testing_testing:
   stage: test
   script:
     - npm install npm@latest -g
+    - npm install --save react react-dom react-scripts
     - npm install -g nyc
     - npm test
     - npm run coverage
