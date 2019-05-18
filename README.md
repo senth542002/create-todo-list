@@ -81,3 +81,6 @@ https://medium.com/@serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f64
 https://hackernoon.com/using-gitlab-ci-cd-to-auto-deploy-your-vue-js-application-to-aws-s3-9affe1eb3457
 https://rpadovani.com/aws-s3-gitlab
 https://about.gitlab.com/2016/08/26/ci-deployment-and-environments/
+
+#Running tests
+https://facebook.github.io/create-react-app/docs/running-tests
