@@ -57,10 +57,8 @@ deploy:
   #     - release
   image: python:latest
   script:
-    #- brew install awscli
-    # - unzip build.zip
-    # - cd build
-    # - ls -la
-    #- npm deploy
     - pip install awscli
-    - aws s3 sync build/ s3://create-todo-list
+    - unzip build.zip
+    - cd build
+    - ls -la
+    - npm deploy
